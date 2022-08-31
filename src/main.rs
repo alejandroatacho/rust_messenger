@@ -2,6 +2,17 @@ use std::io;
 
 fn main() {
     let mut num = 0;
+    println!("Enter your name player 1: ");
+    let mut player1: String = String::new();
+    io::stdin()
+        .read_line(&mut player1)
+        .expect("Failed to read line");
+
+    println!("Enter your name player 2: ");
+    let mut player2: String = String::new();
+    io::stdin()
+        .read_line(&mut player2)
+        .expect("Failed to read line");
     println!("Hello, Rust Messenger has been initialized!");
 
     {
