@@ -1,6 +1,7 @@
 use std::io;
 
 fn main() {
+    let empty_string = " ";
     let mut num = 0;
     println!("Enter your name player 1: ");
     let mut player1: String = String::new();
@@ -23,12 +24,14 @@ fn main() {
                 .read_line(&mut answer)
                 .expect("Failed to read line");
             // println!("{}", answer);
-
+            println!("{} wrote: {}", player1, answer);
             println!("write down your answer/question below and press enter to continue: ");
             let mut answer = String::new();
             io::stdin()
                 .read_line(&mut answer)
                 .expect("Failed to read line");
+            println!("{} wrote: {}", player2, answer);
+
             num += 1;
         }
     }
