@@ -1,7 +1,7 @@
 use std::io;
 
 fn main() {
-    let empty_string = " ";
+    // let empty_string = " ";
     let mut num = 0;
     println!("Enter your name player 1: ");
     let mut player1: String = String::new();
